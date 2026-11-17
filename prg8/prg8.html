@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>program 8</title>
+<style>
+body
+{ 
+text-align:center;
+ margin-top:50px;
+}
+img
+{
+width:150px;
+ height:250px;
+ border-radius:50%;
+ border:3px solid blue;
+ object-fit:cover;
+}
+p
+{
+font-size:20px;
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+<img src="m4.jpeg" id="image"  height="500" width="500"onmouseover="one()" onmouseout="two()">
+<p id="p1">
+</p>
+<script>
+function one()
+{
+  document.getElementById("image").src="m1.jpeg";
+  document.getElementById("p1").innerHTML="onmouseover";
+  document.getElementById("p1").style.color="green";
+}
+function two()
+{
+  document.getElementById("image").src="m3.jpeg";
+  document.getElementById("p1").innerHTML="onmouseout";
+  document.getElementById("p1").style.color="red";
+}
+</script>
+</body>
+</html>
